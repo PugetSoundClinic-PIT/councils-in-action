@@ -1,0 +1,155 @@
+---
+title: "Councils in Action"
+author: "Eva Maxfield Brown, TODO: Council Data Project Contributors, Nic Weber"
+
+abstract: "TODO"
+
+# Styling
+## Basics
+bibliography: support/main.bib
+csl: support/jasist.csl
+
+## Specific for target format
+format:
+  html:
+    code-tools: true
+    standalone: true
+    embed-resources: true
+    toc: true
+    toc-location: left
+    reference-location: margin
+    citation-location: margin
+---
+
+::: {.callout-note appearance="simple" .content-visible when-format="html"}
+TODO: the web version of this paper updates weekly.
+:::
+
+## Introduction
+
+Municipal government meetings are a place where policy is discussed by elected officials, a place for the community to provide last minute comment on policy, and the place where policy is ultimately enacted. The rapid growth and adoption of remotely available, and audio or video recorded, municipal government meetings enables the study of urban politics possible on new scales.
+
+* Scale is hard
+* Understanding what is available for each municipality
+* Choosing what to store and how
+* The data itself
+
+This paper introduces a new dataset called: “Councils in Action” which can be used to study municipal government political deliberations and the enactment of public policy. Using Councils in Action, we have created tools for exploratory data analysis to support new forms of urban political scholarship.
+
+* Tooling shouldn’t just be limited to academics
+* Such data can be used to create search engines for journalists and members of the community
+* Querying, filtering, and more statistical methods are all available to remove barriers to exploring the dataset.
+
+Exploratory data analysis is the process of using summary statistics and data visualization to allow an individual to get a better understanding of the data and potentially help form hypotheses [@Tukey1980ExploratoryDA].
+
+* As municipal government meetings become more fully digitized and available, we argue that exploratory data analysis can be used to remove barriers that are created with scale.
+* EDA is especially useful at scale when evaluating hypotheses that may be computationally complex prior to working on the problem in earnest.
+
+Our recent work with Council Data Project produced data attempts to solve two problems of urban politics scholarship: municipal government data used in urban political scholarship is typically limited to a single or few municipalities, and such data is typically not machine-readable for use in large-scale quantitative study.
+
+* Councils in Action is a dataset composed of high-quality transcripts, video, audio, voting data, and policy documents.
+* The tools we have created allow for large-scale, comparative analysis of municipal meetings.
+* Unlike prior datasets which enable urban political scholarship, Councils in Action has both transcripts and policy outcomes together.
+
+This paper uses exploratory data analysis to explore how meeting transcripts and other text-as-data can be combined with traditional municipal government meeting data (i.e. voting records and policy documents) to enable comparative, longitudinal, urban political scholarship.
+
+* We discuss the broader use of text-as-data in the larger field of political science
+* We demonstrate a few methods which we argue are a start for enabling longitudinal-comparative urban political research.
+
+TODO: Reference limitations? (I.e. “recordings are common in typically large, wealthy municipalities”, our dataset naturally tends towards the larger municipalities)
+
+## Background on Municipal Government and Urban Politics
+
+TODO
+
+## Related Work
+
+### Text-as-Data in Political Scholarship
+
+Text-as-data has been the basis for many forms of political science and legal research:
+
+* Political polarization [@Nmeth2022ASR]
+
+* Partisan affiliation with word embeddings [@Bayram2019WhatsIA;@Rao2016ActionableAP;@Khanna2020GuessTS;@Bergam2022LegalAP;@Abercrombie2022PolicyfocusedSD;@Yan2017ThePO]
+
+* Debate dynamics [@Jalali2014ACD;@Abbott2011RecognizingDI;@Ahmadalinezhad2018DetectingAA;@Jacobi2017JusticeIT;@Parthasarathy2019DeliberativeDI;@Gupta2022ExaminingPR]
+
+* Sentiment [@Abercrombie2020ParlVoteAC;@Abercrombie2019SentimentAP;@Burfoot2008UsingMS;@Burfoot2011CollectiveCO]
+
+* Policy Classification [@Medina2019MultiLabelTC]
+
+* In many cases, the text being processed originates from legislative meeting transcripts (federal legislature floor speeches, UK parliament floor speeches, judicial transcripts, etc.).
+* Quantitative urban political science scholarship leans heavily on access to publicly available meeting minutes. [@Einstein2022StillMT;@Einstein2018WhoPI;@Yoder2020DoesPO;@sahn2022public]
+
+* Specifically these studies heavily rely on states and cities which release public comments with their meeting minutes.
+* Further, quantitative urban political science scholarship tends to tie the available public comments to policy documents or decisions that were discussed during the same meeting.
+* Quantitative urban political scholarship as diverse as the larger field of political science is possible when provided access to a large corpus of transcript data. [@elseasymmetric]
+
+### Prior Datasets of Municipal Meetings
+
+There are problems in simply getting data in the same structure across many municipalities. [@Davis1998GuardiansOA;@Stewart2010LetTS]
+
+Each municipality may have its own regulations for distribution in addition to the distribution format and access method
+There are some companies, and teams, GovTech, CivicTech, academic which have created systems for archiving this data
+
+TODO: TABLE
+
+* Councilmatic
+* Minutes
+* Big Local News
+* YouTube transcripts analysis paper (http://soubhikbarari.com/research/localgov.pdf)
+* Open Civic Data
+* Swagit
+* Legistar
+* Internet Archive
+* Block Party (https://blockparty.studio)
+
+TODO: TABLE
+None of these currently meet all the conditions and data structures Councils in Action does.
+
+* Transcripts
+* Meeting Minutes
+* Documents
+* Openly and easily available
+* Reusable
+
+### Exploratory Data Analysis of Large Text Corpora
+
+Compare and reference Google Trends and [@Aiden2011QuantitativeAO;@Organisciak2021GivingST]
+
+TODO: "Summary":
+
+* Text-as-data is well utilized in the parent field of political science
+* Meeting minutes, and specifically recorded public comments, are heavily utilized by leading researchers in urban political scholarship
+  * Minutes are especially useful because comments can be tied directly to policy outcome
+* There is a need for this data to not only be made available but to made easy to use
+* Such a dataset would include thousands of hours of meeting data
+* EDA and “distant reading” approaches are useful for parsing, filtering, and gaining an understanding of the data
+
+## The Councils in Action Dataset
+
+### Data Model
+
+### Access and Use
+
+### Web User Interface
+
+### Programmatic API
+
+## Comparative, Longitudinal, Municipal Meeting Data
+
+### Text-as-Data
+
+#### Ngram Usage
+
+#### Semantic Representations
+
+### Voting Blocs
+
+## Discussion
+
+## Conclusion
+
+::: {.content-visible unless-format="html"}
+## References
+:::
