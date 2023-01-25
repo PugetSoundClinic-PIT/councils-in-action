@@ -37,8 +37,10 @@ jobs:
     # Store PDF as Artifact
     - uses: actions/upload-artifact@v3
       with:
-        name: councils-in-action-build
-        path: _build/index.pdf
+        name: councils-in-action-static
+        path: |
+          _build/index.pdf
+          _build/index.docx
       
     # Publish to GH Pages
     - name: Publish Book
