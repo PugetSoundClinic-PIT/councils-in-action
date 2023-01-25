@@ -31,13 +31,13 @@ jobs:
           texlive-fonts-recommended \
           texlive-plain-generic
 
-    # Build webpage
-    - name: Build webpage
+    # Build Project
+    - name: Build Project
       shell: bash -l {0}
       run: |
         just build
 
-    # Store PDF as Artifact
+    # Store Static File(s) as Artifact(s)
     - uses: actions/upload-artifact@v3
       with:
         name: councils-in-action-static
@@ -46,7 +46,7 @@ jobs:
           _build/index.docx
       
     # Publish to GH Pages
-    - name: Publish Book
+    - name: Publish to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _build/
