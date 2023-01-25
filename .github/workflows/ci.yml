@@ -26,7 +26,10 @@ jobs:
 
     # Install Tex Deps
     - run: |
-        apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic
+        sudo apt-get install \
+          texlive-xetex \
+          texlive-fonts-recommended \
+          texlive-plain-generic
 
     # Build webpage
     - name: Build webpage
