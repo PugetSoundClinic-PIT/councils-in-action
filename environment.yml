@@ -33,7 +33,7 @@ dependencies:
   - conda-forge::r-tinytex
   - conda-forge::texlive-core
   - pip:
-    - cdp-data[plot,transformers]>=0.0.9
+    - cdp-data[plot]>=0.0.9
     - jupyterlab
     - dask[dataframe,distributed]
     - nltk
