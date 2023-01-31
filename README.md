@@ -42,3 +42,8 @@ You may run into issues running your first `just build` command. If the issue re
 `sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic`
 * Or Upgrade:
 `sudo apt-get upgrade texlive-xetex texlive-fonts-recommended texlive-plain-generic`
+
+If the issue relates to `sentencepiece` try installing supporting software:
+
+* Install:
+`sudo apt-get install cmake build-essential pkg-config libgoogle-perftools-dev`
